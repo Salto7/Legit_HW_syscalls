@@ -1,5 +1,5 @@
 # POC inspired by: https://github.com/WKL-Sec/LayeredSyscall with few changes
-* uses 1 VEH
+* uses 1 VEH, ie less HWBP noise and hopefully less IOC in stack frames
 * can strigger HWBP in any way, not necessaruly ACCESS VIOLATION
 * no decoy function, leave the call traces as is and break at NT/ZW ntdll function
 * at syscall entry, prepare registes and jump to syscall opcode bypassing hooks
