@@ -6,5 +6,6 @@
 * does not use get/set threadcontext or NTContinue to edit the thread contect, instead, modify registers directly (good? ...  bad OPSEC?)
 * Works on "solutions" that install hooks on NTDLL only
 
-  
+One caveat is, a wrapper function is needed for each winapi call, its easy though, check FuncWrappers.cpp and FuncWrappers.h
+
 TODO: add more logic to detect hooks, if no hooks exist, execute normally
